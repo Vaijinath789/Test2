@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            overflow-x: hidden;
+        }
+        .header{
+            background-color: aqua;
+            width: 100%;
+            padding: 10px;
+
+        }
+        nav>ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        nav>ul>li{
+            text-decoration: none;
+            list-style: none;
+
+        }
+        nav>ul>li>a{
+            /* padding: 5px; */
+            margin: 10px;
+            text-decoration: none;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-image: url(../assest/imgaes/study1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+        }
+        .img{
+            line-height: 2;
+        }
+        
+        .input>input{
+           display: block;
+           margin-top: 10px;
+           
+        }
+        .btn{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 4px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">WEB</a></li>
+                <li><a href="">HELP</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+       <div class="content-head">
+          <h2>HELLO WELCOME TO MY WEB PAGE</h2>
+            <p>This is my New Web page</p>
+            <button class="btn">View More</button>
+       </div>
+
+       <div class="img">
+           <h3>Login Details</h3>
+           <form action="" class="input">
+            <input type="text" name="Name" value="Name">
+            <input type="text" name="Last Name" value="Last Name">
+            <input type="tel" name="mobile" value="Mobile Number" maxlength="10">
+
+            <button class="btn">Submit</button>
+           </form>
+       </div>
+    </div>
+</body>
+</html>

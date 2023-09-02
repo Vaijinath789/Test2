@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: blueviolet;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        nav>ul{
+            display: flex;
+            padding: 20px;
+            list-style: none;
+            margin-left: 10px;
+        }
+        nav>ul>li{
+            margin-left: 10px;
+        }
+
+        nav>ul>li>ul{
+            display: none;
+            list-style: none;
+            background-color: white;
+        }
+
+        nav>ul>li>ul>li>ul{
+            list-style: none;
+            background-color: antiquewhite;
+        }
+
+        nav>ul>li:hover ul {
+            display: inherit;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO COLLEGE</h1>
+
+    <nav>
+        <ul>
+            <li>MERN</li>
+            <li>JAVA+
+                <ul>
+                    <li>BACK END</li>
+                    <li>FRONT END+
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>CLOUD</li>
+            <li>NETWORK</li>
+        </ul>
+    </nav>
+</body>
+</html>

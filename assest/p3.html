@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            text-align: center;
+            grid-template-columns: 1fr,1fr,1fr;
+            grid-template-rows: 100px,1fr,100px;
+            grid-template-areas: "header header header" "left center right""left footer right"; 
+        }
+        .header{
+            background-color: aqua;
+            grid-area: header;   
+        }
+        .left{
+            background-color: blanchedalmond;
+            grid-area: left;
+        }
+        .right{
+            background-color: blueviolet;
+            grid-area: right;
+        }
+        .content{
+            background-color: burlywood;
+            grid-area: center;
+        }
+        .footer{
+            background-color: chartreuse;
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header class="header">Head of the part</header>
+        <aside class="left">It in the left side position</aside>
+        <aside class="right">It in the right side position</aside>
+        <h1 class="content">It containt main Information</h1>
+        <footer class="footer">It containt in bottom position</footer>
+        
+    </div>
+</body>
+</html>

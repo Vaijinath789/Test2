@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        .card1{
+            width: 30%;
+            background-color: aquamarine;
+        }
+        .card1>img{
+            width: 100%;
+        }
+        .card1>details>dd:hover {
+            background-color: blue;
+            color: blanchedalmond;
+        }
+        .card1>details>dt:hover{
+            background-color: blueviolet;
+            color: aquamarine;
+        }
+
+
+        /* media */
+        @media(max-width:600px){
+            .card{
+                display: flex;
+                flex-direction: column;
+            }
+            .card1{
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card1">
+            <img src="/assest/imgaes/card5.webp" alt="">
+            <details>
+                <summary>CLICK FOR MORE INFRMATION</summary>
+                <dd>ANIMAL</dd>
+                <dt>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque, incidunt beatae omnis error iste expedita repellendus nesciunt, nulla suscipit cum vitae itaque. Exercitationem, magni ipsam! Repellat voluptates natus laudantium.</dt>
+            </details>
+           
+        </div>
+
+        <div class="card1">
+            <img src="/assest/imgaes/card6.webp" alt="">
+            <details>
+                <summary>CLICK FOR MORE INFRMATION</summary>
+                <dd>ANIMAL</dd>
+                <dt>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque, incidunt beatae omnis error iste expedita repellendus nesciunt, nulla suscipit cum vitae itaque. Exercitationem, magni ipsam! Repellat voluptates natus laudantium.</dt>
+            </details>
+        </div>
+
+        <div class="card1">
+            <img src="/assest/imgaes/card7.webp" alt="">
+            <details>
+                <summary>CLICK FOR MORE INFRMATION</summary>
+                <dd>ANIMAL</dd>
+                <dt>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque, incidunt beatae omnis error iste expedita repellendus nesciunt, nulla suscipit cum vitae itaque. Exercitationem, magni ipsam! Repellat voluptates natus laudantium.</dt>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:blanchedalmond;
+        }
+        .form{
+            line-height: 2;
+        }
+        .form:hover #name{
+            background-color: aquamarine;
+            border-color: aqua;
+        }
+        button{
+            padding: 10px;
+            background-color: aqua;
+            color: white;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: white;
+            color: aqua;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>LOGIN DETAILS</h1>
+    <div class="form">
+        <textfield >
+            <label for="name">NAME</label>
+            <input type="text" name="name" value="name" id="name"  required>
+            <br>
+            <legend>HOBBIES</legend>
+            <label for="ch">TRAVEL</label>
+            <input type="checkbox" value="TRAVEL" id="ch" required>
+    
+            <label for="ch1">BOOKS</label>
+            <input type="checkbox" value="TRAVEL" id="ch1" required>
+    
+            <label for="ch2">READING</label>
+            <input type="checkbox" value="TRAVEL" id="ch2" required>
+    
+            <br>
+            <legend>GENDER</legend>
+            <label for="Male">Male</label>
+            <input type="radio" value="male" name="male" id="Male" required>
+    
+            <label for="female">Female</label>
+            <input type="radio" value="female" name="male" id="femle" required>
+            <br>
+            <button>SUBMIT</button>
+        </textfield>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
